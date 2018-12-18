@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="vplank.xsl"?>
+<vp>
+  <kopf>
+    <datei>tag_Mo.xml</datei>
+    <titel>Montag, 3. Januar 2000 (A-Woche)</titel>
+    <schulname>Eine tolle Schule</schulname>
+    <datum>01.01.2000, 12:34</datum>
+    <kopfinfo>
+      <abwesendk>05.1, 12</abwesendk>
+      <aenderungk>05.2</aenderungk>
+    </kopfinfo>
+  </kopf>
+  <freietage>
+  </freietage>
+  <haupt>
+  </haupt>
+  <fuss>
+  </fuss>
+</vp>

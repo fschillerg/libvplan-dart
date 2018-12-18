@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="vplank.xsl"?>
+<vp>
+  <kopf>
+    <datei>tag_Mo.xml</datei>
+    <titel>Montag, 3. Januar 2000 (A-Woche)</titel>
+    <schulname>Eine tolle Schule</schulname>
+    <datum>01.01.2000, 12:34</datum>
+    <kopfinfo>
+      <abwesendk>05.1, 12</abwesendk>
+      <aenderungk>05.2</aenderungk>
+    </kopfinfo>
+  </kopf>
+  <freietage>
+    <ft>000104</ft>
+    <ft>000105</ft>
+  </freietage>
+  <haupt>
+    <aktion>
+      <klasse>05.1</klasse>
+      <stunde>1-2</stunde>
+      <fach fageaendert="ae">MA</fach>
+      <lehrer legeaendert="ae">Frau Mathe</lehrer>
+      <raum rageaendert="ae">100</raum>
+      <info>Raumänderung</info>
+    </aktion>
+    <aktion>
+      <klasse>12/MA1</klasse>
+      <stunde>3-4</stunde>
+      <fach>---</fach>
+      <lehrer></lehrer>
+      <raum></raum>
+      <info>Mathe fällt aus</info>
+    </aktion>
+  </haupt>
+  <fuss>
+    <fusszeile>
+      <fussinfo></fussinfo>
+    </fusszeile>
+    <fusszeile>
+      <fussinfo>Eine tolle Information!</fussinfo>
+    </fusszeile>
+    <fusszeile>
+      <fussinfo></fussinfo>
+    </fusszeile>
+    <fusszeile>
+      <fussinfo>Noch eine Information!</fussinfo>
+    </fusszeile>
+  </fuss>
+</vp>
