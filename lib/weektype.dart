@@ -1,5 +1,3 @@
-part of 'libvplan.dart';
-
 /// An enum representing the type of week.
 enum WeekType {
   A,

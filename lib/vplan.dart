@@ -1,4 +1,5 @@
-part of 'libvplan.dart';
+import 'weekday.dart';
+import 'weektype.dart';
 
 /// A complete timetable change document.
 class Vplan {

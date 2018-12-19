@@ -1,4 +1,11 @@
-part of 'libvplan.dart';
+import 'dart:convert';
+
+import 'package:http/http.dart' as http;
+import 'package:path/path.dart' as path;
+
+import 'parser.dart';
+import 'vplan.dart';
+import 'weekday.dart';
 
 /// A client to retrieve timetable changes.
 class Client {

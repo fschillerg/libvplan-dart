@@ -1,5 +1,3 @@
-part of 'libvplan.dart';
-
 /// A simple enum for a day of the (working) week.
 enum Weekday {
   Monday,

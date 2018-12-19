@@ -1,4 +1,10 @@
-part of 'libvplan.dart';
+import 'package:intl/intl.dart' as intl;
+import 'package:intl/date_symbol_data_local.dart' as intlSymbol;
+import 'package:xml/xml.dart' as xml;
+
+import 'vplan.dart';
+import 'weekday.dart';
+import 'weektype.dart';
 
 /// Indicates why parsing went wrong.
 enum ParserErrorKind {
