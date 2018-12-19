@@ -1,27 +1,27 @@
 part of 'libvplan.dart';
 
 /// A client to retrieve timetable changes.
-class VplanClient {
+class Client {
   http.Client _client;
   String _url;
   String _authentication;
 
   /// Creates a client for the specified URL.
-  VplanClient(String url) {
+  Client(String url) {
     this._client = new http.Client();
     this._url = url;
     this._authentication = null;
   }
 
   /// Creates a client for the specified URL, using the given `Authentication` header.
-  VplanClient.withAuthentication(String url, String authentication) {
+  Client.withAuthentication(String url, String authentication) {
     this._client = new http.Client();
     this._url = url;
     this._authentication = authentication;
   }
 
   /// Creates a client for the specified URL, using HTTP `Basic` authentication.
-  VplanClient.withCredentials(String url, String username, String password) {
+  Client.withCredentials(String url, String username, String password) {
     String auth = Base64Encoder().convert(Utf8Encoder().convert('${username}:${password}'));
     this._client = new http.Client();
     this._url = url;

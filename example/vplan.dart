@@ -20,7 +20,7 @@ void main(List<String> arguments) {
     exit(1);
   }
 
-  var client = libvplan.VplanClient.withCredentials('https://fssgym.de/vplan', args['username'], args['password']);
+  var client = libvplan.Client.withCredentials('https://fssgym.de/vplan', args['username'], args['password']);
   client.get(day).then((vplan) {
     print('${vplan.date.date.day}.${vplan.date.date.month}.${vplan.date.date.year} (${libvplan.WeekTypeConverter.toStringDE(vplan.date.weekType)})\n');
 
