@@ -67,6 +67,35 @@ class WeekdayConverter {
     }
   }
 
+  /// Converts JSON into a `Weekday`.
+  /// Errors if given JSON representation is invalid.
+  static Weekday fromJson(dynamic json) {
+    switch (json) {
+      case 0:
+        return Weekday.Monday;
+        break;
+
+      case 1:
+        return Weekday.Tuesday;
+        break;
+
+      case 2:
+        return Weekday.Wednesday;
+        break;
+
+      case 3:
+        return Weekday.Thursday;
+        break;
+
+      case 4:
+        return Weekday.Friday;
+        break;
+
+      default:
+        throw 'Invalid JSON representation!';
+    }
+  }
+
   /// Converts a `Weekday` to the corresponding German string.
   static String toStringDE(Weekday input) {
     String name;
@@ -123,5 +152,30 @@ class WeekdayConverter {
     }
 
     return name;
+  }
+
+  /// Converts a `Weekday` to JSON.
+  static dynamic toJson(Weekday input) {
+    switch (input) {
+      case Weekday.Monday:
+        return 0;
+        break;
+
+      case Weekday.Tuesday:
+        return 1;
+        break;
+
+      case Weekday.Wednesday:
+        return 2;
+        break;
+
+      case Weekday.Thursday:
+        return 3;
+        break;
+
+      case Weekday.Friday:
+        return 4;
+        break;
+    }
   }
 }
