@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the fromStringDE method from the WeekTypeConverter class, for the Dart programming language.">
+  <title>fromStringDE method - WeekTypeConverter class - weektype library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">libvplan</a></li>
+    <li><a href="weektype/weektype-library.html">weektype</a></li>
+    <li><a href="weektype/WeekTypeConverter-class.html">WeekTypeConverter</a></li>
+    <li class="self-crumb">fromStringDE method</li>
+  </ol>
+  <div class="self-name">fromStringDE</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>WeekTypeConverter class</h5>
+    <ol>
+      <li class="section-title"><a href="weektype/WeekTypeConverter-class.html#constructors">Constructors</a></li>
+      <li><a href="weektype/WeekTypeConverter/WeekTypeConverter.html">WeekTypeConverter</a></li>
+    
+      <li class="section-title inherited">
+        <a href="weektype/WeekTypeConverter-class.html#instance-properties">Properties</a>
+      </li>
+      <li class="inherited"><a href="weektype/WeekTypeConverter/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="weektype/WeekTypeConverter/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="weektype/WeekTypeConverter-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="weektype/WeekTypeConverter/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="weektype/WeekTypeConverter/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="weektype/WeekTypeConverter-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="weektype/WeekTypeConverter/operator_equals.html">operator ==</a></li>
+    
+    
+      <li class="section-title"><a href="weektype/WeekTypeConverter-class.html#static-methods">Static methods</a></li>
+      <li><a href="weektype/WeekTypeConverter/fromJson.html">fromJson</a></li>
+      <li><a href="weektype/WeekTypeConverter/fromStringDE.html">fromStringDE</a></li>
+      <li><a href="weektype/WeekTypeConverter/toJson.html">toJson</a></li>
+      <li><a href="weektype/WeekTypeConverter/toStringDE.html">toStringDE</a></li>
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <h1>fromStringDE method</h1>
+
+    <section class="multi-line-signature">
+      <span class="returntype"><a href="weektype/WeekType-class.html">WeekType</a></span>
+      <span class="name ">fromStringDE</span>
+(<wbr><span class="parameter" id="fromStringDE-param-input"><span class="type-annotation">String</span> <span class="parameter-name">input</span></span>)
+      
+    </section>
+    <section class="desc markdown">
+      <p>Converts a German string into a <code>WeekType</code>.
+Errors if given type of week is not valid.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Implementation</span> </h2>
+      <pre class="language-dart"><code class="language-dart">static WeekType fromStringDE(String input) {
+  switch (input) {
+    case &#39;A-Woche&#39;:
+      return WeekType.A;
+      break;
+
+    case &#39;B-Woche&#39;:
+      return WeekType.B;
+      break;
+
+    default:
+      throw &#39;Invalid type of week!&#39;;
+  }
+}</code></pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    libvplan 0.2.0
+  </span>
+
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
